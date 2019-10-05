@@ -1,8 +1,8 @@
 TextParser: 
-	g++ textParser.cpp -o TextParser
+    g++ textParser.cpp -o TextParser
 
 clean:
-	rm *.o
+    rm *.o
 
 run: TextParser
-	./TextParser
+    ./TextParser
