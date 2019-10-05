@@ -17,7 +17,7 @@
 //function prototypes
 bool is_digit(const char value) { return std::isdigit(value); }
 
-// the following did not run on tesla 
+// the following did not run on tesla. 
 // bool is_numeric(const std::string& value) { return std::any_of(value.begin(), value.end(), is_digit); }
 
 bool is_numeric(const std::string& s)
