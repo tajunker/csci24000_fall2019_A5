@@ -2,18 +2,30 @@
 //parses an input file
 //save output to output file 
 
+#include <stdlib.h>
+#include <string.h>
+#include <vector>
 #include <string>
 #include <sstream>
 #include <fstream>
 #include <iostream>
 #include <algorithm>
 #include <ctype.h>
-
+#include <cstdio>
+#include <utility>
 
 //function prototypes
 bool is_digit(const char value) { return std::isdigit(value); }
-bool is_numeric(const std::string& value) { return std::all_of(value.begin(), value.end(), is_digit); }
 
+// the following did not run on tesla 
+// bool is_numeric(const std::string& value) { return std::any_of(value.begin(), value.end(), is_digit); }
+
+bool is_numeric(const std::string& s)
+{
+    std::string::const_iterator it = s.begin();
+    while (it != s.end() && std::isdigit(*it)) ++it;
+    return !s.empty() && it == s.end();
+}
 
 // start main
 int main() {

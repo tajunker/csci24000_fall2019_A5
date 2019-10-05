@@ -1,8 +1,8 @@
 TextParserBlackBelt: 
-    g++ textParserBlackBelt.cpp -o TextParserBlackBelt
+	g++ textParserBlackBelt.cpp -o TextParserBlackBelt
 
 clean:
-    rm *.o
+	rm *.o output.txt TextParserBlackBelt
 
 run: TextParserBlackBelt
-    ./TextParserBlackBelt
+	./TextParserBlackBelt

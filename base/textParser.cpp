@@ -2,7 +2,8 @@
 //parses an input file
 //save output to output file 
 
-
+#include <stdlib.h>
+#include <string.h>
 #include <string>
 #include <sstream>
 #include <fstream>
