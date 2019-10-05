@@ -1,4 +1,4 @@
-//textParser.cpp
+//textParserBlackBelt.cpp
 //parses an input file
 //save output to output file 
 
